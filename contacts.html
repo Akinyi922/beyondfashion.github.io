@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beyond Fashion KE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+	<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+	<link href="fashion.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		function submitDetails()
+		{
+			let names=document.getElementById("names");
+			let email=document.getElementById("email");
+			let phone=document.getElementById("phone");
+			let message=document.getElementById("message");
+			
+			//no blank entries
+			noEmpty(names); noEmpty(email); noEmpty(phone); noEmpty(message); 
+		}
+		
+		function noEmpty(what)
+		{
+			if(what == "")
+			{
+				document.getElementById("resp").innerHTML= what + " cannot be blank.";
+				exit();
+			}
+		}
+	</script>
+  </head>
+  <body>
+    <main>
+	    <section class="header-container ">
+			<div class="logo">
+				<img src="beyond-logo.png">
+			</div>
+			<div class="menu">
+				<div><a href="index.html">Home</a>
+				</div>
+				<div><a href="about.html">About us</a>
+				</div>
+				<div><a href="products.html">Products </a>
+				</div>
+				<div><a href="gallery.html">Gallery</a>
+				</div>
+				<div><a href="contacts.html">Contact Us</a>
+				</div>
+			</div>
+			<div class="social-icons">
+				<div><i class="bi bi-twitter-x"></i></div>
+				<div><i class='bxl  bx-facebook'  ></i> </div>
+				<div>fb</div>
+				<div>fb</div>
+			</div>
+		</section>
+		<section class="p-5">
+		      <div class="mx-auto p-4 row ">
+					<div class="col-md-3">
+					</div>
+					<div class="col-md-6 white-bg rounded p-5">
+						<div class="text-center panel-title">Contact Us</div>
+						<div class="form-container">
+							<div>
+								<label>Full Names</label></br>
+								<input type="text" id="names" placeholder="Full Names" required>
+							</div>
+							<div>
+								<label>Email</label></br>
+								<input type="email" id="email" placeholder="Email" required>
+							</div>
+							<div>
+								<label>Phone</label></br>
+								<input type="telephone" id="phone" placeholder="Phone" required>
+							</div>
+							<div>
+								<label>Message</label></br>
+								<textarea id="message">
+								</textarea>
+							</div>
+							<div id="resp" class="text-center">
+							
+							</div>
+							<div>
+								<button onclick="submitDetails()">Submit</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+					</div>
+			  </div>
+		</section>
+		<footer class="p-5 text-center">
+		   Beyond Fashion KE
+		</footer>
+	
+	</main>
+  </body>
+</html>
+

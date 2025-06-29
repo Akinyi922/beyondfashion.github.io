@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	
+}
+
+a{
+	text-decoration:none;
+	color:#7d4f50;
+}
+
+.header-container
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding:35px 45px;
+	align-items:center;
+	align-content:center;
+	background-color:#fbfcfc;
+}
+
+.b-width
+{
+	width:80%;
+}
+
+.b-width-variant
+{
+	width:90%;
+}
+
+body
+{
+	background-color:#e8e8e4;
+	font-family: "Poppins", sans-serif;
+	font-style: 0.9rem;
+	letter-spacing:-1;
+	
+}
+
+.logo
+{
+	display:block;
+	
+	img{
+		height:50px;
+		width:110px;
+	}
+}
+
+.products-container 
+{
+	display:flex;
+	flex-direction:column;
+	
+}
+
+.products-container > div:nth-child(1)
+{
+	margin-top:0px;
+}
+
+.products-container > div
+{
+	margin-top:40px;
+}
+
+.product-pallete
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	
+}
+
+.product-pallete > div
+{
+	margin:5px;
+	padding:5px 12px;
+	border:1px solid #dcecf2;
+}
+
+
+
+input[type="email"], input[type="text"], input[type="password"], input[type="number"], input[type="telephone"],  input[type="date"], textarea   
+{
+   
+   width:100%; 
+   border:1px solid  #bdc3c7;
+   border-radius:6px;
+   padding:7px 22px;
+}
+
+label
+{
+	color:#bdc3c7;
+	font-size:0.8rem;
+}
+
+button
+{
+   width:100%; 
+   border:none;
+   border-radius:6px;  
+   padding:7px 22px;
+   font-size:0.8rem;
+   font-weight:700;
+}
+
+.form-container
+{
+	display:flex;
+	flex-direction:column;
+	
+}
+
+.form-container > div:nth-child(1)
+{
+	margin-top:0px;
+}
+
+.form-container > div
+{
+	margin-top:20px;
+}
+
+
+.menu
+{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	align-content:center;
+	font-size:1.0rem
+	
+}
+
+.menu > div 
+{
+	margin-inline:30px;
+}
+
+.social-icons
+{
+	display:flex;
+	flex-direction:row
+	align-items:center;
+	align-content:center
+	
+}
+
+.social-icons > div
+{
+	margin-inline:3px;
+	font-size:1.5rem;
+}
+
+.bf-blue-bg
+{
+	background-color:#d8e2dc;
+}
+
+.hero-title
+{
+	font-size:2.0rem;
+}
+
+.hero-cta
+{
+	display:inline-block;
+	padding:15px 45px;
+	text-align:center;
+	border: 2px solid #01497c;
+	text-transform:uppercase;
+	font-weight:800;
+}
+
+.panel-title
+{
+	font-size:2.5rem;
+	font-weight:500;
+	letter-spacing:-1;
+}
+
+.category-title
+{
+	font-weight:600;
+	font-size:1.6rem
+}
+
+.white-bg
+{
+	background-color:white;
+}
